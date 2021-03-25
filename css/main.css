@@ -17,6 +17,12 @@
 	color: var(--orange-fluo);
 }
 
+.novatic-blue {
+	font-weight: bold;
+	/* color: #007bff; */
+	color: var(--bleu-cobalt);
+}
+
 ul.nova-list {
 	text-align: left !important;
 	padding-left: 5rem;
@@ -73,10 +79,71 @@ li.export::before {
 	overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
 
-.img-hover-zoom img {
+.img-hover-zoom .img-fluid {
 	transition: transform 0.8s ease-in-out;
 }
 
-.img-hover-zoom:hover img {
+.img-hover-zoom:hover .img-fluid {
 	transform: scale(1.2);
+}
+
+.img-vision-overlap {
+	position: absolute;
+	top: 25%;
+	left: 80%;
+	width: 80%;
+}
+
+.featured-text {
+	backdrop-filter: blur(5px);
+}
+
+.nova-box {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.custom-underline {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.custom-underline::after {
+	content: "";
+	position: absolute;
+}
+
+.nova-box .custom-underline::after {
+	bottom: -20%;
+	height: 0.1em;
+	width: 0%;
+	left: 0;
+	background-color: var(--orange-fluo);
+	transition: 0.5s ease all 0.3s;
+}
+
+.img-hover-zoom:hover .custom-underline::after {
+	width: 50%;
+	transition: 0.3s ease all;
+}
+
+.img-mission {
+	/* border: solid; */
+	height: 100%;
+	background-image: url("../assets/img/pexels-anna-shvets-5324967.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.img-mission-overlap {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+}
+
+.img-mission-overlap .featured-text {
+	backdrop-filter: blur(10px);
 }
