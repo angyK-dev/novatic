@@ -1,5 +1,5 @@
 * {
-	--bleu-cobalt: #22427c;
+	--bleu-cobalt: #0e2342;
 	--orange: #d5ae21;
 	--orange-fluo: #ff7f00;
 	--bleu-clair: #090a0a;
@@ -12,9 +12,21 @@
 	line-height: 2;
 }
 
+.nova-about.colored {
+	padding: 2.5em;
+	background-color: #04235b;
+	border-radius: 1.5em;
+	color: white;
+}
+
 .novatic {
 	font-weight: bold;
 	color: var(--orange-fluo);
+}
+
+.novatic-white {
+	font-weight: bold;
+	color: white;
 }
 
 .novatic-blue {
@@ -146,4 +158,50 @@ li.export::before {
 
 .img-mission-overlap .featured-text {
 	backdrop-filter: blur(10px);
+}
+
+.novatic-team {
+	/* width: 100%; */
+	padding: 2.5em;
+	background-color: var(--orange-fluo);
+}
+
+.member {
+	/* position: absolute; */
+	display: inline-block;
+	/* box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4); */
+}
+
+.member.one {
+	position: relative;
+	margin-top: -10em;
+}
+.member.two {
+	left: 1em;
+}
+.member.one {
+	position: relative;
+	right: 1.5em;
+}
+.member.one {
+	left: 1em;
+}
+.member.one {
+	left: 1em;
+}
+.member.one {
+	left: 1em;
+}
+.member.one {
+	left: 1em;
+}
+.member.one {
+	left: 1em;
+}
+.member.one {
+	left: 1em;
+}
+
+.team-section {
+	padding: 6em;
 }
