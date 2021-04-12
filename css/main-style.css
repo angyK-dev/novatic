@@ -109,10 +109,20 @@ li.export::before {
 .featured-text {
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
-    -moz-backdrop-filter: blur(5px);
-    -o-backdrop-filter: blur(5px);
-    -ms-backdrop-filter: blur(5px);
-    /* filter: blur(5px); */
+	-moz-backdrop-filter: blur(5px);
+	-o-backdrop-filter: blur(5px);
+	-ms-backdrop-filter: blur(5px);
+	/* filter: blur(5px); */
+}
+
+.featured-text.round {
+	border-radius: 1.5rem;
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);
+	-moz-backdrop-filter: blur(25px);
+	-o-backdrop-filter: blur(25px);
+	-ms-backdrop-filter: blur(25px);
+	opacity: 1;
 }
 
 .nova-box {
@@ -212,41 +222,41 @@ li.export::before {
 }
 
 .carousel-item img {
-    height: 100vh;
-    object-fit: cover;
+	height: 100vh;
+	object-fit: cover;
 
-    /* Add the blur effect */
+	/* Add the blur effect */
 	/* filter: blur(1px);
 	-webkit-filter: blur(1px); */
 }
 
 .carousel-item {
 	height: 100vh;
-    object-fit: cover;
+	/* object-fit: cover; */
 }
 
 .carousel-item.home {
-	background: url('../assets/img/003.jpg');
-	
+	background-image: url("../assets/img/003.jpg");
+	background-size: cover;
 }
 
 .carousel-item.event {
-	background: url('../assets/img/004.jpg');
-	
+	background-image: url("../assets/img/004.jpg");
+	background-size: cover;
 }
 
 .carousel-item.immo {
-	background: url('../assets/img/001.jpg');
-	
+	background-image: url("../assets/img/001.jpg");
+	background-size: cover;
 }
 
 .carousel-item.import {
-	background: url('../assets/img/002.jpg');
-	
+	background-image: url("../assets/img/002.jpg");
+	background-size: cover;
 }
 
 .carousel-caption * {
-	text-shadow: 1px 2px 4px #CE5937;
+	text-shadow: 1px 2px 4px #ce5937;
 }
 
 #nav-blur {
@@ -256,10 +266,30 @@ li.export::before {
 	width: 100vw;
 	height: 3em;
 	-webkit-filter: blur(20px);
-    -moz-filter: blur(15px);
-    -o-filter: blur(15px);
-    -ms-filter: blur(15px);
-    filter: blur(15px);
-    opacity: 0.95;
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+	filter: blur(15px);
+	opacity: 0.95;
 	z-index: 2;
+}
+
+.carousel-item {
+	position: relative;
+}
+
+.blurred {
+	position: absolute;
+	top: 10em;
+	left: 10em;
+	background-color: yellow;
+	height: 5em;
+	width: 260px;
+
+	-webkit-filter: blur(20px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+	filter: blur(15px);
+	opacity: 0.5;
 }
